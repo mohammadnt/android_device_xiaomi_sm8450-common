@@ -320,6 +320,10 @@ $(foreach sku, taro diwali cape ukee, \
         frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_$(sku)/android.hardware.sensor.stepdetector.xml \
     ))
 
+# Shims
+PRODUCT_PACKAGES += \
+    libhidlbase_shim
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
